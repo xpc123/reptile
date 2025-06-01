@@ -24,7 +24,8 @@ def run_appointment():
 def main():
     # 设置目标时间（例如：今天下午14:59）
     target_time = datetime.now().replace(hour=14, minute=59, second=10, microsecond=0)
-    
+    # target_time = datetime.now().replace(hour=14, minute=39, second=00, microsecond=0)
+
     # 如果目标时间已经过了，就设置为明天
     if datetime.now() > target_time:
         target_time = target_time + timedelta(days=1)
